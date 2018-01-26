@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>GlacyShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="css/glacy-style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container flex-head">
+      <div class="logo">
+        <a href="glacy_main.html" target="_blank"><img src="img/logo.svg" alt="GlacyShop" width="154" height="64"></a>
+      </div>
+      <div class="menu-head">
+        <div class="menu-head_catalog-active" tabindex="0">
+          <p>Каталог</p>
+        </div>
+        <div class="menu-head_deliver">
+          <a href="#">Доставка и оплата</a>
+        </div>
+        <div class="menu-head_company">
+          <a href="#">О Компании</a>
+        </div>
+      </div>
+      <div class="info-head">
+        <div class="search-wrap" tabindex="0">
+          <div class="search">
+            <div class="search-container">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <input class="searcher" type="search" placeholder="Что ищем?" id="searcher">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="enter-wrap" tabindex="0">
+          <div class="enter">
+            <a href="#">Вход</a>
+            <div class="enter-container">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input class="mail" type="email" placeholder="Электронная почта">
+                <input class="pass" type="password" placeholder="Пароль">
+                <div class="reg-options">
+                  <input class="btn-enter" type="button" value="Войти" tabindex="0">
+                  <a class="forget-pass" href="#">Забыли пароль?</a>
+                  <a class="new-user" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="cart-active-wrap" tabindex="0">
+          <div class="cart-active">
+            <a href="#">2 товара</a>
+            <div class="cart-container">
+              <ul>
+                <li class="one-ice">
+                  <div class="cart-name">Пломбир с апельсиновым джемом</div>
+                  <div class="cart-price">1,5 кг х 200 руб.</div>
+                  <div class="cart-total">300 руб.</div>
+                </li>
+                <li class="one-ice">
+                  <div class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+                  <div class="cart-price">1,5 кг х 300 руб.</div>
+                  <div class="cart-total">450 руб.</div>
+                </li>
+              </ul>
+              <p>Итого: 750 руб.</p>
+              <a class="btn-order" href="#">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="glacy_main.html" target="_blank">Главная</a>
+        <a href="#">Каталог</a>
+        <span>Сливочное</span>
+      </div>
+      <div class="caption">
+        <h2>Сливочное мороженое</h2>
+      </div>
+      <form class="sorting" action="https://echo.htmlacademy.ru" method="post">
+        <div class="sort-type">
+          <p>Сортировка:</p>
+          <select name="types" size="1">
+            <option value="popular" selected>по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expense">сначала дорогие</option>
+            <option value="fats">по жирности</option>
+          </select>
+          <div class="select-item"></div>
+        </div>
+        <div class="price-range">
+          <p>Цена: 100 руб. – 500 руб.</p>
+          <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+          </div>
+        </div>
+        <div class="fatso">
+          <p>Жирность:</p>
+          <div class="choose-fat">
+            <input type="radio" name="fat" id="fat0">
+            <label for="fat0" tabindex="0">0%</label>
+            <input type="radio" name="fat" id="fat10" checked>
+            <label for="fat10" tabindex="0">10%</label>
+            <input type="radio" name="fat" id="fat30">
+            <label for="fat30" tabindex="0">до 30%</label>
+            <input type="radio" name="fat" id="fat300">
+            <label for="fat300" tabindex="0">выше 30%</label>
+          </div>
+        </div>
+        <div class="filler">
+          <p>Наполнители:</p>
+          <div class="choose-filler">
+            <input type="checkbox" name="choco" id="choco" checked>
+            <label for="choco" tabindex="0">шоколадные</label>
+            <input type="checkbox" name="shugar" id="shugar" checked>
+            <label for="shugar" tabindex="0">сахарные присыпки</label>
+            <input type="checkbox" name="fruit" id="fruit">
+            <label for="fruit" tabindex="0">фрукты</label>
+            <input type="checkbox" name="syrup" id="syrup">
+            <label for="syrup" tabindex="0">сиропы</label>
+            <input type="checkbox" name="jam" id="jam">
+            <label for="jam" tabindex="0">джемы</label>
+          </div>
+        </div>
+        <div class="apply" tabindex="0">
+          <input type="submit" name="apply" value="Применить" class="apply-it">
+        </div>
+      </form>
+      <div class="main-menu">
+        <ul class="all-sale">
+          <li>
+            <img src="img/prod-1.png" width="267" height="267">
+            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-2.png" width="267" height="267">
+            <p>Сливочно-кофейное с кусочками шоколада</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-3.png" width="267" height="267">
+            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-4.png" width="267" height="267">
+            <p>Сливочное крем-брюле с карамельной подливкой</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-5.png" width="267" height="267">
+            <p>Сливочное с брусничным джемом</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-6.png" width="267" height="267">
+            <p>Сливочно-черничное с цельными ягодами черники</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-7.png" width="267" height="267">
+            <p>Сливочно-лимонное с карамельной присыпкой</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-8.png" width="267" height="267">
+            <p>Сливочное с шоколадной стружкой</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-9.png" width="267" height="267">
+            <p>Сливочно-ванильное с кусочками шоколада</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-10.png" width="267" height="267">
+            <p>Сливочное с ментоловым сиропом</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-11.png" width="267" height="267">
+            <p>Сливочное с кусочками черного шоколада</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/prod-12.png" width="267" height="267">
+            <p>Сливочное с мятным сиропом</p>
+            <div class="fast-watch">
+              <a href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+        </ul>
+        <div class="nav-sale">
+          <input type="radio" name="pages" id="page-1" checked>
+          <label for="page-1">1</label>
+          <input type="radio" name="pages" id="page-2">
+          <label for="page-2">2</label>
+          <input type="radio" name="pages" id="page-3">
+          <label for="page-3">3</label>
+          <input type="radio" name="pages" id="page-4">
+          <label for="page-4">4</label>
+          <input type="radio" name="pages" id="page-5">
+          <label for="page-5">5</label>
+          <div class="to-right"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="social">
+        <a href="https://twitter.com"><img src="img/twitter.svg" alt="twitter" width="37" height="37">twitter</a>
+        <a href="https://instagram.com"><img src="img/instagram.svg" alt="instagram" width="37" height="37">instagram</a>
+        <a href="https://facebook.com"><img src="img/fb.svg" alt="facebook" width="37" height="37">facebook</a>
+        <a href="https://vk.com"><img src="img/vk.svg" alt="vk" width="37" height="37">vkontakte</a>
+      </div>
+      <div class="foot-menu">
+        <a href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </div>
+      <div class="home">
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="110" height="40"></a>
+        <p>HTML Academy</p>
+      </div>
+    </footer>
+  </body>
+</html>
