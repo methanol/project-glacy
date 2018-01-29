@@ -137,6 +137,14 @@ body {
   background-color: rgba(208, 112, 88, 0.4);
 }
 
+footer a:hover {
+  color: rgba(208, 112, 88, 0.7);
+}
+
+footer a:active {
+  color: rgba(208, 112, 88, 1);
+}
+
 .menu-head_deliver a,
 .menu-head_company a {
   display: inline-block;
@@ -362,12 +370,16 @@ body {
   margin-left: 15px;
 }
 
-.reg-options a:first-of-type::after,
-.reg-options a:last-of-type::after {
+.reg-options div {
+    position: relative;
+}
+
+.reg-options div::after,
+.reg-options div::before {
   content: "";
   position: absolute;
-  top: 148px;
-  left: 17px;
+  top: -44px;
+  left: -5px;
   border-radius: 50%;
   height: 44px;
   width: 44px;
@@ -376,8 +388,8 @@ body {
   z-index: -1;
 }
 
-.reg-options a:last-of-type::after {
-  left: 90px;
+.reg-options div::after {
+  left: 68px;
 }
 
 .reg-options {
@@ -626,10 +638,10 @@ body {
 .subscribe label:hover::after,
 .back a:hover::before,
 .back a:hover::after,
-.enter input[type="button"]:hover ~ a:first-of-type::after,
-.enter input[type="button"]:hover ~ a:last-of-type::after,
-.letter input[type="button"]:hover ~ .btn-wrap::after,
-.letter input[type="button"]:hover ~ .btn-wrap::before,
+.enter input[type="button"]:hover ~ .btn-round:after,
+.enter input[type="button"]:hover ~ .btn-round::before,
+.letter input[type="button"]:hover ~ .btn-rounds::after,
+.letter input[type="button"]:hover ~ .btn-rounds::before,
 .cart-active .btn-order:hover::after,
 .cart-active .btn-order:hover::before,
 .fast-watch a:hover::after,
@@ -656,10 +668,10 @@ body {
 .subscribe label:active::after,
 .back a:active::before,
 .back a:active::after,
-.enter input[type="button"]:active ~ a:first-of-type::after,
-.enter input[type="button"]:active ~ a:last-of-type::after,
-.letter input[type="button"]:active ~ .btn-wrap::after,
-.letter input[type="button"]:active ~ .btn-wrap::before,
+.enter input[type="button"]:active ~ .btn-round:after,
+.enter input[type="button"]:active ~ .btn-round:before,
+.letter input[type="button"]:active ~ .btn-rounds::after,
+.letter input[type="button"]:active ~ .btn-rounds::before,
 .cart-active .btn-order:active::after,
 .cart-active .btn-order:active::before,
 .fast-watch a:active::after,
@@ -1005,12 +1017,13 @@ body {
   top:25%;
   left:30%;
   width: 477px;
-  min-height: 402px;
+  min-height: 350px;
   background-color: rgb(247, 246, 243);
   z-index: 1000;
   border-radius: 3%;
   padding: 25px;
   display: none;
+  padding-bottom: 0;
 }
 
 .we-will-answer p {
@@ -1040,6 +1053,7 @@ body {
 
 .your-text {
   padding: 10px 0 10px 10px;
+  max-width: 427px;
 }
 
 .letter input[type="button"] {
@@ -1057,18 +1071,20 @@ body {
   box-shadow: 0px 2px 0px 0px rgba(172, 16, 0, 0.64);
   position: relative;
   margin-left: 15px;
-  align-self: flex-end;
-  position: relative;
   margin-right: 20px;
   border-radius: 7%;
 }
+.we-will-answer .btn-wrap {
+  position: relative;
+  align-self: flex-end;
+}
 
-.we-will-answer .btn-wrap::after,
-.we-will-answer .btn-wrap::before {
+.we-will-answer .btn-rounds::after,
+.we-will-answer .btn-rounds::before {
   content: "";
   position: absolute;
-  top: 379px;
-  right: 22px;
+  top: 0px;
+  right: 0px;
   border-radius: 50%;
   height: 43px;
   width: 44px;
@@ -1077,8 +1093,8 @@ body {
   z-index: -1;
 }
 
-.we-will-answer .btn-wrap::before {
-  right: 122px;
+.we-will-answer .btn-rounds::before {
+  right: 95px;
 }
 
 .close {
